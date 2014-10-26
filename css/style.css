@@ -298,14 +298,18 @@ ul.tips {
   float: left; /* LTR */
   padding: 0px 0px 0px 0px; /* LTR */
 }
+#top-banner {
+}
 #name-and-slogan {
   float: left; 
   margin: 0 0 0 10px; /* top-right-bottom-left */
+  display: table-cell;
 }
 #site-name {
   font-size: 3.0em; /*pbase*/
   color: #686868;
   line-height: 1;
+  width: 510;
 }
 h1#site-name {
   margin: 0;
@@ -320,6 +324,12 @@ h1#site-name {
   word-spacing: 0.1em;
   font-style: italic;
 }
+#contact-and-search {
+  display: table-cell;
+  float: right;
+  color: #ccccff;
+}
+
 /* Region header blocks. */
 .region-header .block {
   font-size: 0.857em;
@@ -916,12 +926,12 @@ ul.links {
 }
 #footer {
   letter-spacing: 0.2px;
-  margin-top: 30px;
+  margin-top: 10px;
   border-top: 1px solid #555;
   border-color: rgba(255, 255, 255, 0.15);
 }
 #footer .region {
-  margin-top: 20px;
+  margin-top: 2px;
 }
 #footer .block {
   clear: both;

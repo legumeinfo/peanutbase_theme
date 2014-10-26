@@ -100,34 +100,43 @@
     <?php endif; ?>
 
     <?php if ($site_name || $site_slogan): ?>
-      <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
+      <div id="top-banner">
+        <div id="name-and-slogan"<?php if ($hide_site_name && $hide_site_slogan) { print ' class="element-invisible"'; } ?>>
 
-        <?php if ($site_name): ?>
-          <?php if ($title): ?>
-            <div id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
-              <strong>
+          <?php if ($site_name): ?>
+            <?php if ($title): ?>
+              <div id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
+                <strong>
+                  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+                </strong>
+              </div>
+            <?php else: /* Use h1 when the content title is empty */ ?>
+              <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong>
-            </div>
-          <?php else: /* Use h1 when the content title is empty */ ?>
-            <h1 id="site-name"<?php if ($hide_site_name) { print ' class="element-invisible"'; } ?>>
-              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
+              </h1>
+            <?php endif; ?>
           <?php endif; ?>
-        <?php endif; ?>
+      
+          <?php if ($site_slogan): ?>
+            <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
+              <?php print $site_slogan; ?>
+            </div>
+          <?php endif; ?>
+        </div> <!-- /#name-and-slogan -->
+        
 
-        <?php if ($site_slogan): ?>
-          <div id="site-slogan"<?php if ($hide_site_slogan) { print ' class="element-invisible"'; } ?>>
-            <?php print $site_slogan; ?>
-          </div>
-        <?php endif; ?>
+        <?php /*CONTACT AND SEARCH BLOCK*/?>
+        <div id="contact-and-search">
+          <br>
+          <a class="contact-and-search" href="/contact">Contact us</a>
+        </div>
 
-      </div> <!-- /#name-and-slogan -->
+      </div> <!-- /#top-banner -->
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
 
- <?php if ($main_menu): ?>
+    <?php if ($main_menu): ?>
       <div id="main-menu" class="navigation">
         <?php print theme('links__system_main_menu', array(
           'links' => $main_menu,
