@@ -1664,3 +1664,38 @@ div.admin-panel .description {
 #footer-wrapper .poll .bar .foreground {
   background-color: #ddd;
 }
+
+
+/* ---- pseudo buttons ----- */
+.circular {
+/*
+  border-style: solid;
+  border-width: 3px;
+  border-color: #31160B;
+*/
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;  
+  background: #F5EFEC;
+  text-align: center;
+}
+.circular-over {
+/*
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(49, 22, 11), .5);
+*/
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;  
+  background: #ECE2DE;
+  text-align: center;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.nodecoration {
+  text-decoration: none;
+}
