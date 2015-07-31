@@ -1678,6 +1678,7 @@ div.admin-panel .description {
   border-radius: 40px;  
   background: #F5EFEC;
   text-align: center;
+  line-height: 125%;
 }
 .circular-over {
 /*
@@ -1690,6 +1691,7 @@ div.admin-panel .description {
   border-radius: 40px;  
   background: #ECE2DE;
   text-align: center;
+  line-height: 125%;  
 }
 
 .nowrap {
