@@ -67,6 +67,7 @@ ul.nice-menu ul li {
 ul.nice-menu li a:hover {
     border: 0;
     color: white;
+    background: #593d61;
 }
 
 ul.nice-menu-down li.menuparent {
@@ -74,7 +75,8 @@ ul.nice-menu-down li.menuparent {
 }
 
 ul.nice-menu-down li.menuparent a.active {
-    background: white url("../images/arrow-down.png") right center no-repeat;
+    color: black;
+    background: white;
 }
 
 ul.nice-menu-down li.menuparent:hover {
