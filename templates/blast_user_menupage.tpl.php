@@ -49,3 +49,5 @@ database type. Please click on the program name to view the search form.
       Search protein database using a protein query.</td>
   </tr> 
 </table>
+
+<?php print theme('blast_recent_jobs', array()); ?>
