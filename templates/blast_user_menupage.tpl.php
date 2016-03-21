@@ -12,7 +12,7 @@
 <p>
   Search for one or more of your sequences (using BLAST) against the
   genome sequences for two wild peanut species, <i>A. duranensis</i>
-  and <i>A. ipeansis</i>. First pick a query type (nucleotide or protein). 
+  and <i>A. ipaensis</i>. First pick a query type (nucleotide or protein). 
   You will be able to set search parameters on the next page.
 </p>
 <p>
