@@ -9,7 +9,7 @@ else if (strcmp($feature->type_id->name, 'genetic_marker') == 0 ) {
   include_once('sites/all/modules/legume/legume_marker/theme/templates/tripal_feature_marker_base.tpl.php');
 }
 else if (strcmp($feature->type_id->name, 'gene') == 0 ) {
-  include_once('sites/all/modules/tripal_gene/theme/templates/tripal_feature_marker_base.tpl.php');
+  include_once('sites/all/modules/tripal_gene/theme/templates/tripal_gene_base.tpl.php');
 }
 else if (strcmp($feature->type_id->name, 'linkage_group') == 0 ) {
   include_once('sites/all/modules/legume/legume_lg/theme/templates/tripal_feature_lg_base.tpl.php');
