@@ -128,7 +128,9 @@
         <?php /*CONTACT AND SEARCH BLOCK*/?>
         <div id="contact-and-search">
           <br>
-          <a class="contact-and-search" href="/contact">Contact us</a>
+          <a href="/contact" style="color:white;text-decoration:underline;float:right;">Contact us</a>
+          <br>
+          <a href="http://eepurl.com/b6zeIL" style="color:white;text-decoration:underline;float:right;">Newsletter signup</a>
         </div>
 
       </div> <!-- /#top-banner -->
