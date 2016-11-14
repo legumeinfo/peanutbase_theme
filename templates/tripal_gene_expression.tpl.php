@@ -10,6 +10,7 @@
     $frp = $fr[0]->feature_relationshipprop;
     if ($frp->value == 'Tissue expression atlas transcripts mapping') {
 //echo "<pre>";var_dump($fr[0]->object_id);echo "</pre>";
+      $gene_model = $fr[0]->subject_id->name;
       $transcript = $fr[0]->object_id->name;
     }
   }//each feature_relationship
@@ -24,10 +25,12 @@
 ?>
     <div>
       <p>
-        Gene expression for [gene model name] has been determined by transcript assemblies from
+        Gene expression for <b><?php echo $gene_model?></b> has been determined by its associated
+        transcript, <b><?php echo $transcript?></b> in the transcript assemblies 
+        from
         <a href="http://journal.frontiersin.org/article/10.3389/fpls.2016.01446/full">Clevenger 
         et al. 2016</a>. 
-        Visualization of expression provided by the eFP browser 
+        Visualization of expression is provided by the eFP browser 
          (<a href="http://dx.doi.org/10.1371/journal.pone.0000718">Winter et al. 2007</a>). 
          Click the image to explore gene expression data for peanut.
       </p>
