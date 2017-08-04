@@ -1179,7 +1179,7 @@ fieldset.collapsed {
   border-radius: 0;
 }
 fieldset legend {
-  background: #dbdbdb;
+  background: #f0f3e4;/*#dbdbdb;*/
   border: 1px solid #ccc;
   border-bottom: none;
   color: #3b3b3b;
