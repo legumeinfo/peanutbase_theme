@@ -2,37 +2,35 @@
 
 ul.nice-menu {
     border: 0;
+
     background-color: none;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 ul.nice-menu li {
     border: 0;
+
     border-top-width: 0;
-    margin-right: 4px;
-    border-top-left-radius: 10px; 
-    border-top-right-radius: 10px;
+    margin-right: -2px;
+
+    border-top-left-radius: 10px;
     -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
     -moz-border-radius-topleft: 10px;
-    -moz-border-radius-topright: 10px;
 }
 
 ul.nice-menu li a {
-    border: 0;
-    border-top-width: 0;
-    color: #000;
+    border: 1px solid #543a2c;
+    
+    color: #3e1c0e; 
     font-size: 0.8em;
     line-height: 1.6em;
     padding-left: 12px;
     padding-right: 12px;
     text-decoration: none;
+
     border-top-left-radius: 10px; 
-    border-top-right-radius: 10px;
     -webkit-border-top-left-radius: 10px;
-    -webkit-border-top-right-radius: 10px;
     -moz-border-radius-topleft: 10px;
-    -moz-border-radius-topright: 10px;
 }
 
 ul.nice-menu .menuparent li a {
@@ -56,8 +54,7 @@ ul.nice-menu .menuparent li {
 }
 
 ul.nice-menu ul {
-    border: 0;
-    border-top-width: 0;
+    border: 1px solid #c19d8a;
 }
 
 ul.nice-menu ul li {
@@ -65,13 +62,12 @@ ul.nice-menu ul li {
 }
 
 ul.nice-menu li a:hover {
-    border: 0;
     color: white;
     background: #6c5b71;
 }
 
 ul.nice-menu-down li.menuparent {
-    background: #e0d6d1 url("../images/arrow-down.png") right center no-repeat;
+    background: #f2e6d9 url("../images/arrow-down.png") right center no-repeat;
 }
 
 ul.nice-menu-down li.menuparent a.active {
@@ -84,7 +80,7 @@ ul.nice-menu-down li.menuparent:hover {
 }
 
 ul.nice-menu-down li {
-    background: #e0d6d1;
+    background: #f2e6d9;/*#e0d6d1;*/
 }
 
 ul.nice-menu-down li a.active {
