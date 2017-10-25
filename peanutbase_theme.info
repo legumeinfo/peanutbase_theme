@@ -3,7 +3,7 @@ description = A flexible, recolorable theme with many regions.
 package = Core
 version = VERSION
 core = 7.x
-base theme = Bartik
+base theme = bartik
 
 ;-----sdash
 ;engine = phptemplate
