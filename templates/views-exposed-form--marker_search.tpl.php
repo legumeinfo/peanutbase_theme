@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * This template handles the layout of the views exposed filter form.
@@ -20,14 +21,7 @@
  *
  * @ingroup views_templates
  */
-
-// A desparate hack to get search term
-//print "WIDGETS <pre>";var_dump($widgets);echo "</pre>";
-preg_match("/value=\"(.*?)\" /", $widgets['filter-all_names']->widget, $matches);
-//print "MATCHES<pre>";var_dump($matches);echo "</pre>";
-$search_term = (count($matches) > 1) ? $matches[1] : '';
 ?>
-
 <?php if (!empty($q)): ?>
   <?php
     // This ensures that, if clean URLs are off, the 'q' is added first so that
@@ -44,7 +38,13 @@ $search_term = (count($matches) > 1) ? $matches[1] : '';
         el.value = 'Lec-1';
       }
     }
-  }//marker_example
+/*
+    var t2 = jQuery("#edit-marker_name");
+    if (jQuery("#edit-marker_name")) {
+      jQuery("#edit-marker_name").val('Lec-1');
+    }
+*/
+  }
 </script>
 <div class="views-exposed-form">
   <h2>Marker Search</h2>
@@ -101,10 +101,6 @@ $search_term = (count($matches) > 1) ? $matches[1] : '';
     <?php endif; ?>
     <div class="views-exposed-widget views-example">
       <br><a href="#" onclick="marker_example()">Example</a>
-      <br><a href="<?php 
-            print url('search/marker/csv',
-                      array('query'=>array('marker_name'=>$search_term)))?>">Download marker details</a>
-<!--      <br><a href="#javascript:startDownload()">Download results</a>-->
     </div>
   </div>
 </div>
