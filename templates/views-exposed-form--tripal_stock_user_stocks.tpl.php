@@ -28,7 +28,7 @@
 <?php endif; ?>
 <div class="views-exposed-form">
     Search for stocks using the form below. Columns in the result table can be
-    sorted by clicking on column headers.
+    sorted by clicking on column headers. For example, search for "Tifrunner".
   <div class="views-exposed-widgets clearfix">
     <?php foreach ($widgets as $id => $widget): ?>
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
