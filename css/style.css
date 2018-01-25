@@ -1662,9 +1662,6 @@ div.admin-panel .description {
 
 
 /* ---- pseudo buttons ----- */
-td.pseudobutton {
-	min-width: 12em;
-}
 .circular {
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
