@@ -1672,6 +1672,8 @@ div.admin-panel .description {
   background-color: #f2e6d9;
   text-align: center;
   line-height: 125%;
+  min-width: 180px;
+  font-size: 0.78em;
   box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0,0,0,0.19);
 }
 .circular-over {
@@ -1684,6 +1686,7 @@ div.admin-panel .description {
   background-color: #f2e6d9;
   text-align: center;
   line-height: 125%;  
+  font-size: 0.78em;
   text-decoration: none;
 }
 
