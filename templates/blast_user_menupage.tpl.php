@@ -11,14 +11,12 @@
 <h1> BLAST Search </h1>
 <p>
   Search for one or more of your sequences (using BLAST) against the
-  genome sequences for two wild peanut species, <i>A. duranensis</i>
-  and <i>A. ipaensis</i>. First pick a query type (nucleotide or protein). 
-  You will be able to set search parameters on the next page.
+  genome sequences for cultivated peanut v. Tifrunner (<i>A. hypogaea</i>),
+  or its two wild progenitor species, <i>A. duranensis</i> and <i>A. ipaensis</i>.
 </p>
-<p>
-Choose the appropriate program based on the Query type and Target
-database type. Please click on the program name to view the search form.
-<p>
+<p> 
+  Select the program for your query and target types below, then set search parameters on the next page.
+</p>
 
 <table>
   <tr>
