@@ -6,6 +6,6 @@
 //      map_feature_id=linkage group, then calculates start/stop positions
 //  - add CMap link to linkage group table
 
-include_once('sites/all/modules/legume/legume_featuremap/theme/templates/tripal_featuremap_featurepos.tpl.php');
+include_once(drupal_get_path('module', 'legume_featuremap') . '/theme/templates/tripal_featuremap_featurepos.tpl.php');
 
 
